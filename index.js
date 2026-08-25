@@ -1,2 +1,5 @@
-console.log('Bem vindo ao pokemonJS')
-console.log('')
+console.log('==Bem vindo ao pokemonJS==')
+console.log('= New Game =')
+console.log('= Continue =')
+console.log('=  Opções  =')
+console.log('=   Sair   =')
