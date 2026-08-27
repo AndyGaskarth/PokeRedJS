@@ -1,4 +1,6 @@
-const treinador = ''
+import rl from './app/input.js'
+
+
 
 export function interface{
     console.log('Pokemons')

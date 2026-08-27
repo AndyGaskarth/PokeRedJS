@@ -12,8 +12,8 @@ console.log('=   0. Sair   =')
     rl.question('Escolha uma opção: ', (opcao) => {
         switch(opcao){
             case '1':
-                console.log('\nIniciando novo jogo...', novoJogo);
-                
+                console.log('\nIniciando novo jogo...');
+                return novoJogo();
             case '2':
                 console.log('\nContinuar jogo...');
                 break;
