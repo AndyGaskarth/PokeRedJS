@@ -1,9 +1,5 @@
-const readline = require('readline');
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout 
-});
+import rl from './app/input.js';
+import { novoJogo } from './app/novoJogo.js'
 
 function menuInicial() { 
 
@@ -16,8 +12,8 @@ console.log('=   0. Sair   =')
     rl.question('Escolha uma opção: ', (opcao) => {
         switch(opcao){
             case '1':
-                console.log('\nIniciando novo jogo...');
-                return;
+                console.log('\nIniciando novo jogo...', novoJogo);
+                
             case '2':
                 console.log('\nContinuar jogo...');
                 break;
