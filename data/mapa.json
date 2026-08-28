@@ -1,0 +1,17 @@
+{
+  "Rota 1": {
+    "pokemons": ["Pidgey", "Rattata"],
+    "nivelMin": 2,
+    "nivelMax": 5
+  },
+  "Planices":{
+    "pokemons": ["Pidgey", "Rattata","Caterpie", "Weedle"],
+    "nivelMin": 5,
+    "nivelMax": 10
+  },
+  "Floresta": {
+    "pokemons": ["Caterpie", "Weedle","Zubat" ,"Pikachu"],
+    "nivelMin": 3,
+    "nivelMax": 7
+  }
+}

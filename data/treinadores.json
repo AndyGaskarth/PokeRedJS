@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nome": "João",
+    "classe": "Jovem",
+    "time": ["Pidgey", "Rattata"],
+    "nivelMin": 3,
+    "nivelMax": 5,
+    "recompensa": 200
+  },
+  {
+    "id": 2,
+    "nome": "Carla",
+    "classe": "Treinadora",
+    "time": ["Bulbasaur", "Oddish"],
+    "nivelMin": 4,
+    "nivelMax": 6,
+    "recompensa": 300
+  }
+]
