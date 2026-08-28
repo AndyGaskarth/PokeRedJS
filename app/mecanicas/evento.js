@@ -15,7 +15,7 @@ export function encontro(local = 'Rota 1', aoFinalizar) {
         const treinador = treinadores[Math.floor(Math.random() * treinadores.length)];
         console.log(`\nVocê encontrou o treinador ${treinador.nome}!`);
         console.log(`Ele possui os seguintes Pokémon: ${treinador.time.join(', ')}`);
-    } else if (chance < 0.5) {
+    } else if (chance < 0.8) {
         const rota = mapas[local];
         const nomeEscolhido = rota.pokemons[Math.floor(Math.random() * rota.pokemons.length)];
         
