@@ -1,9 +1,16 @@
 import rl from './input.js';
+import fs from 'node:fs';
 import path from 'path'; 
 
 const pastaSave = path.join(
     process.env.APPDATA, 'pokemonJS'
 );
+
+if (!fs.existsSync(pastaSave)) {
+    fs.mkdirSync(pastaSave, { recursive: true});
+}
+
+const savePath = path.join(pastaSave, 'pokeSavejs.json');
 
 export function novoJogo() {
     console.log('\nBem vindo ao mundo pokemon node.js, onde toda realização começou com um sonho.');
@@ -11,6 +18,16 @@ export function novoJogo() {
     console.log('Por favor, me diga: qual será seu nome?\n');
 
     rl.question('Insira seu nome: ', (nome) => {
+        const jogador = {
+            nome: nome,
+            time: [],
+            itens: [],
+            pokedex: [],
+            localizacao: 'Rota 1',
+        }
+
+        fs.writeFileSync(savePath, JSON.stringify(jogador, null, 2), 'utf8');
+
         console.clear();
 
         console.log(`\nBem-vindo, ${nome}!`);
@@ -56,6 +73,9 @@ export function novoJogo() {
                         console.log('Agora você está pronto para começar sua jornada como treinador de Pokémon.');
                         console.log('Explore o mundo e capture novos Pokémon!\n');
                         rl.close();
+
+
+                        pastaSave  
                     });
                 });
             });
